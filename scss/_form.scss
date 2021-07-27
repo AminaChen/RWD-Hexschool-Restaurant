@@ -1,0 +1,15 @@
+@mixin form-input(){
+    margin-bottom: 12px;
+    font-size: $fontSize-standard;
+    padding: 5px 14px;
+    border: 1px solid $light;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    width: 100%;
+}
+@mixin form-input-focus(){
+    &:focus{
+        outline: none;
+        border-color: rgb(143, 50, 50);
+    }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>六角西餐廳 - 登入頁</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="lasthwRWD">
+    <meta name="keywords" content="lasthwRWD">
+
+    <meta property="og:image" content="http://">
+    <meta property="og:title" content="lasthwRWD">
+    <meta property="og:description" content="lasthwRWD">
+    <meta property="og:url" content="https://">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="lasthwRWD">
+    <meta property="fb:app_id" content="15numbers">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2, minimum-scale=1">
+
+    <link rel="shortcut icon" href="http://">
+    <link rel="apple-touch-icon" href="http://">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/all.css">
+
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="header">
+            <h1 class="logo"><a href="#">六角西餐廳</a></h1>
+            <ul class="menu">
+                <li><a href="#">特色</a></li>
+                <li><a href="#">主廚</a></li>
+                <li><a href="#">地圖</a></li>
+            </ul>
+            <a href="#" class="mobile-menuBtn">
+                <img src="img/menu.svg" alt="menu">
+            </a>
+        </div>
+        <div class="contentG">
+            <div class="contentContainer bannerG">
+                <div class="bannerText">
+                    <h2>咬一口<span>就無法忘懷的漢堡</span></h2>
+                    <p>七夕絕對無法錯過的好滋味</p>
+                    <p>
+                        <i class="icon-fork-and-knife" aria-hidden="true"></i>                        
+                        六角大漢堡
+                        <i class="icon-fork-and-knife" aria-hidden="true"></i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="contentContainer loginArea">
+                <img src="img/logo_l(null).svg"></img>
+                <p>享受美食好味道</p>
+                <div class="loginG">
+                    <p>LOGIN</p>
+                    <form action="">
+                        <label for="email">Email Address*</label>
+                        <div class="inputG">
+                            <input type="email" id="email">
+                            <i class="icon-mail" aria-hidden="true"></i>
+                        </div>
+                        <label for="password">Password*</label>
+                        <div class="inputG">
+                            <input type="password" id="password">
+                            <i class="icon-lock" aria-hidden="true"></i>
+                        </div>
+                        <a href="#" class="forgetPassword">忘記密碼？</a>
+                        <div class="btnG">
+                            <input type="button" value="註冊">
+                            <input type="button"  value="登入">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="footerText">
+                <div class="aboutHexSchool">
+                    <h2 class="areaTitle">關於 六角西餐廳</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, porro dicta. Maiores voluptate repudiandae enim ea dignissimos</p>
+                </div>
+                <div class="contact">
+                    <h2 class="areaTitle">聯絡方式</h2>
+                    <ul class="contactInfo">
+                        <li><span>高雄市中正五路到底</span></li>
+                        <li><span>+886 886 886</span></li>
+                        <li><span>service@hexshcool.com</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="societyG">
+                <div class="logo">六角西餐廳</div>
+                <div class="society">
+                    <a href="#">
+                        <img src="img/google.svg" alt="Google">
+                    </a>
+                    <a href="#">
+                        <img src="img/twitter.svg" alt="Twitter">
+                    </a>
+                    <a href="#">
+                        <img src="img/facebook.svg" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.mobile-menuBtn').on('click', function(e){
+                e.preventDefault();
+                $('body').toggleClass('openMenu');
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import "breakPoint";
+
+a{
+    color: $primary;
+    text-decoration: none;
+}
+
+.wrap{
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    background: $bg;
+    color: $primary;
+    @include Ipad(){
+        max-width: 768px;
+    }
+    @include Iphone(){
+        max-width: 375px;
+    }
+}
+
+.header{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 25px 0 40px;
+    background: $header-bg;
+    position: fixed;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    @include Ipad(){
+        padding: 0 22px 0 13px;
+        height: 57px;
+    }
+    a{
+        color: $lighter;
+    }
+    .logo{
+        display: flex;
+        a{
+            background: url('../img/logo_w@svg.svg') no-repeat center center;
+            width: 120px;
+            @include imgReplaceText;
+            @include Ipad(){
+                width: 94px;
+                background-size: 94px 24px;
+            }
+        }
+    }
+    .menu{
+        display: flex;
+        @include Iphone(){
+            flex-flow: column;
+            z-index: 100;
+            background-color: $darker;
+            text-align: center;
+            overflow: hidden;
+            position: absolute;
+            max-height: 0; 
+            top: 57px;
+            left: 0;
+            right: 0;
+        }
+        li{
+            padding: 18px 15px;
+            a{
+                display: block;
+                font-size: $fontSize-standard;
+                font-weight: 100;
+                position: relative;
+                @include Iphone(){
+                    &:hover{
+                        background-color: $lighter;
+                        color: $primary;
+                    }
+                }
+                &:after{
+                    content: '';
+                    width: 0%;
+                    height: 10px;
+                    background-color: rgba(253, 231, 30, 0.644);
+                    position: absolute;
+                    bottom: 0;
+                    right: 50%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    transition: .1s;
+                }
+                &:hover:after{
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+    .mobile-menuBtn{
+        display: none;
+        height: 24px;
+        width: 24px;
+        z-index: 100;
+        @include Iphone(){
+            display: inline-block;
+        }
+    }
+}
+.openMenu .menu{
+    @include Iphone(){
+        max-height: 500px;
+    }
+}
+
+.bannerG{
+    max-width: 1024px;
+    height: 420px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/header_desktop.png') no-repeat center center;
+    @include Iphone(){
+        padding: 0 10px;
+        background: url('../img/header_mobile.png') no-repeat center center / auto 420px;
+
+    }
+    .bannerText{
+        padding: 25px 40px;
+        background-color: $bannerText-bg;
+        color: $lighter;
+        text-align: center;
+        @include Iphone(){
+            padding: 20px 6px;
+        }
+        span{
+            @include Iphone(){
+                display: block;
+            }
+        }
+    }
+    h2{
+        font-size: $fontSize-title-1;
+        font-weight: 300;
+    }
+    p{
+        font-size: $fontSize-standard;
+        font-weight: 100;
+        &:first-of-type{
+            margin-top: 16px;
+        }
+    }
+    
+}
+
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 42px;
+    @include Ipad(){
+        padding: 50px 10px;
+    }
+    @include Iphone(){
+        flex-flow: column;
+    }
+    .areaTitle{
+        text-align: left;
+        margin-bottom: 16px;
+    }
+}
+.footerText{
+    display: flex;
+    @include Iphone(){
+        flex-flow: column;
+    }
+}
+.aboutHexSchool{
+    p{
+        max-width: 300px;
+        @include Ipad(){
+            max-width: 235px;
+        }
+        @include Iphone(){
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+}
+.contact{
+    margin-left: 21px;
+    @include Iphone(){
+        max-width: 100%;
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+    li{
+        list-style: disc;
+        list-style-position: inside;
+        span{
+            margin-left: -10px;
+        }
+    }
+}
+.societyG{
+    @include Iphone(){
+        display: flex;
+        flex-flow: column;
+    }
+    .logo{
+        height: 49px;
+        width: 245px;
+        background: url('/img/logo_l@svg.svg') no-repeat center center;
+        @include imgReplaceText;
+        @include Iphone(){
+            align-self: flex-end;
+        }
+    }
+    .society{
+        margin-top: 22px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    a{
+        height: 35px;
+        width: 35px;
+        margin-left: 12px;
+        display: block;
+    }
+}

@@ -1,0 +1,10 @@
+@mixin imgReplaceText(){
+    text-indent: 102%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+@mixin align-icon(){
+    position: absolute;
+    top: 0;
+    left: 0;
+}

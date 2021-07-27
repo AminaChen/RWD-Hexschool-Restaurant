@@ -1,0 +1,41 @@
+// Color
+$primary: #3D1101;
+$secondary: #EFE9E7;
+$light: #CCC;
+$lighter: #fff;
+$darker: #030303;
+
+// Color Background
+$bg: #EFE9E7;
+$header-bg: rgba(0,0,0, .75);
+$bannerText-bg: rgba(0,0,0, .35);
+$todayChefG-bg: #3D1101;
+$bookingG-bg: rgba(250,250,250, .7);
+
+// Color Border
+$outLine: rgb(86, 248, 253);
+
+// Color Btn
+$Btn-dark: rgba(0,0,0, .35);
+$Btn-color1: #F56C23;
+$Btn-color2: #FF5E45;
+
+// Color Icon
+$icon1: rgba(255, 87, 51, .5);
+
+// Font Size
+$fontSize-standard: 16px;
+$fontSize-shopName-1: ceil($fontSize-standard * 3 + 1); // ~ 49px
+$fontSize-shopName-2: ceil($fontSize-standard * 3); // ~ 48px
+$fontSize-title-1: ceil($fontSize-standard * 2.25); // ~ 36px
+$fontSize-title-2: ceil($fontSize-standard * 1.5); // ~ 24px
+$fontSize-title-3: ceil($fontSize-standard * 1.25); // ~ 20px
+$fontSize-title-4: ceil($fontSize-standard * 1.125); // ~ 18px
+$fontSize-subTitle-1: ceil($fontSize-standard * 0.75); // ~ 12px
+$fontSize-btn-1: $fontSize-standard; // ~ 16px
+$fontSize-btn-2: ceil($fontSize-standard * 0.875); // ~ 14px
+
+
+
+
+

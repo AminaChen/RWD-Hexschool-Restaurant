@@ -1,0 +1,27 @@
+@mixin btnG(){
+    align-self: flex-end;
+    font-size: 0; //~ 消 btn 之間的空白
+}
+
+@mixin btn(){
+    margin-bottom: 0;          
+    padding: 6px 0;
+    width: 70px;
+    text-align: center;
+    font-size: $fontSize-btn-2;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+@mixin btn-dark-hover(){
+    &:hover{
+        background-color: $lighter;
+        color: $Btn-dark;
+    }
+}
+@mixin btn-submit-hover(){
+    &:hover{
+        background-color: $lighter;
+        color: $Btn-color1;
+    }
+}
